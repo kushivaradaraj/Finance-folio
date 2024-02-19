@@ -2,21 +2,6 @@
 
 * {
   font-family: "Mitr", sans-serif;
-  background-color: rgb(190, 219, 227);
-  
-}
-
-body{
-    background-color: rgb(122, 182, 198);
-    
-}
-
-.bg-light {
-    background-color: rgb(190, 219, 227)!important;
-}
-
-.text-muted{
-    color:#c70039;
 }
 
 .link {
@@ -33,7 +18,7 @@ body{
   color: #007965;
 }
 .edit:hover {
-  color: #59d737;
+  color: #00af91;
 }
 
 .delete {
@@ -43,7 +28,7 @@ body{
   color: #ff577f;
 }
 
-.out {
+.bx {
   pointer-events: none;
 }
 
