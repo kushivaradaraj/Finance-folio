@@ -3,42 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-    rel="stylesheet"
-    />
-    
-    <!-- Bootstrap CSS: rapidly styles web pages with pre-designed components and styles, ensuring responsiveness across devices. -->
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <!-- Chart JS: This is a script tag linking to the Chart.js library, which enables the creation of interactive and visually appealing charts and graphs on web pages. -->
+
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Chart JS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
       integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
       crossorigin="anonymous"
     ></script>
 
-    <!-- Chart JS Plugin: Simple yet flexible JavaScript charting library for the modern web -->
+    <!-- Chart JS Plugin -->
     <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
 
-    <!-- CountUp JS: JavaScript class that can be used to quickly create animations that display numerical data in a more interesting way. -->
+    <!-- CountUp JS -->
     <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
 
-    <!-- Sweet Aleart JS: RESPONSIVE REPLACEMENT FOR JAVASCRIPT'S POPUP BOXES -->
+    <!-- Sweet Aleart JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-    <!-- Sheet JS: Read, edit, and export spreadsheets -->
+    <!-- Sheet JS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.mini.min.js"
       integrity="sha512-edsVBJ+Mhf6lc2Sm3k87X8q794hL9g++dgr4yetkaHJfLJfz6e6SG5wq921i2YHjQCAtJ+91ZzbhxP+L9WVwOA=="
       crossorigin="anonymous"
     ></script>
 
-    <!-- File Save JS: to save files on the client-side -->
+    <!-- File Save JS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
       integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
@@ -48,13 +51,13 @@
     <!-- Style -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Finance-folio</title>
+    <title>My Budget Tracker</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Finance-folio 💰💸</a>
+        <a class="navbar-brand" href="#">My Budget Tracker 💰💸</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -64,7 +67,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -78,7 +81,7 @@
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
-                
+                aria-expanded="false"
               >
                 Expend
               </a>
@@ -129,19 +132,19 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Hey you!!
+                Hi👋, Adam
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a class="dropdown-item" href="#"
-                    ><i class="out out-log-out"></i> Logout</a
+                    ><i class="bx bx-log-out"></i> Logout</a
                   >
                 </li>
               </ul>
             </li>
           </ul>
 
-          <img class="img-profile" src="user-solid-24.png"> 
+          <img class="img-profile" src="./images/profile-pic.png" />
         </div>
       </div>
     </nav>
@@ -322,7 +325,7 @@
       <div class="container-fluid text-center">
         <span class="text-muted"
           >Copyright &copy;
-          <a class="link" href="https://adamblog.co" target="_blank">Kushi Varadaraj</a>
+          <a class="link" href="https://adamblog.co" target="_blank">adamblog.co</a>
           All Rights Reserved 🚀</span
         >
       </div>
@@ -388,7 +391,7 @@
                   type="radio"
                   name="category"
                   id="party-category"
-                  value="🎉"
+                  value="🍻"
                 />
                 <label class="form-check-label" for="party-category">🍻</label>
               </div>
@@ -397,8 +400,8 @@
                   class="form-check-input"
                   type="radio"
                   name="category"
-                  id="study-category"
-                  value="📚"
+                  id="house-category"
+                  value="🏠"
                 />
                 <label class="form-check-label" for="house-category">🏠</label>
               </div>
@@ -455,6 +458,7 @@
         </div>
       </div>
     </div>
+    <!-- Add Expend Item Modal -->
 
     <!-- Add Income Item Modal -->
     <div
@@ -521,7 +525,7 @@
     </div>
     <!-- Add Income Modal -->
 
-    <!--Option 1: Bootstrap Bundle with Popper -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
@@ -529,6 +533,6 @@
     ></script>
 
     <!-- App JS -->
-    <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
