@@ -2,6 +2,49 @@
 
 * {
   font-family: "Mitr", sans-serif;
+  background-color: rgb(190, 219, 227);
+  
+}
+
+body{
+    background-color: rgb(122, 182, 198);
+    
+}
+
+.bg-light {
+    background-color: rgb(190, 219, 227)!important;
+}
+
+.text-muted{
+    color:#c70039;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.img-profile {
+  width: 40px;
+  height: 40px;
+  b@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Mitr", sans-serif;
+  background-color: rgb(190, 219, 227);
+  
+}
+
+body{
+    background-color: rgb(122, 182, 198);
+    
+}
+
+.bg-light {
+    background-color: rgb(190, 219, 227)!important;
+}
+
+.text-muted{
+    color:#c70039;
 }
 
 .link {
@@ -18,7 +61,7 @@
   color: #007965;
 }
 .edit:hover {
-  color: #00af91;
+  color: #59d737;
 }
 
 .delete {
@@ -28,7 +71,7 @@
   color: #ff577f;
 }
 
-.bx {
+.out {
   pointer-events: none;
 }
 
@@ -57,3 +100,5 @@ table > thead {
     width: 100%;
   }
 }
+
+
